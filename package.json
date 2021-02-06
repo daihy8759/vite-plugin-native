@@ -1,5 +1,5 @@
 {
-    "name": "vite-plugin-native",
+    "name": "@daihy8759/vite-plugin-native",
     "version": "1.0.0",
     "description": "load .node file",
     "main": "lib/index.js",
