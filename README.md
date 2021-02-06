@@ -1,11 +1,9 @@
-# plugin-svg-sprite
-
-SVG sprite plugin for [Vite2](https://github.com/vitejs/vite)
+# vite-plugin-native
 
 ## install
 
 ```
-npm i plugin-svg-sprite -D
+npm i vite-plugin-native -D
 ```
 
 ## Usage
@@ -13,27 +11,9 @@ npm i plugin-svg-sprite -D
 vite.config.js:
 
 ```javascript
-import svgSprite from 'plugin-svg-sprite';
+import native from 'vite-plugin-native';
 
 const config = {
-    plugins: [svgSprite()],
+    plugins: [native()],
 };
-```
-
-app code:
-
-```javascript
-const modules = import.meta.globEager('./assets/icons/svg/*.svg');
-console.log(modules);
-// or
-import appIconId from './path/to/icons/app.svg';
-
-// react or vue component, as you want
-export default function App() {
-    return (
-        <svg class="svg-icon">
-            <use href="#icon-system"></use>
-        </svg>
-    );
-}
 ```
